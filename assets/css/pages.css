@@ -444,7 +444,7 @@ body, #container-wrap { background:#ededed; }
 #loadIndicator span:after { padding-left:1ex; content:'cargando...'; }
 .page-scale-wrap { width:680px; height:850px; background: #fff !important; }
 .paper-vertical { width:680px; height:100%; }
-.paper-horizontal { width:8284px; height:862px; }
+.paper-horizontal { width:11735px; height:862px; }
 nav#page-nav { display:none; }
 html.nav-transition nav#page-nav { opacity:.3; pointer-events:none; }
 nav#page-nav > button {
@@ -584,9 +584,4 @@ html[data-dir="rtl"] #viewer-thumb-wrap { direction:rtl; }
 	body:not(.responsive) .viewer-page-thumb > img {max-width:175px;}
 }
 
-#item94174 {
-	width:326px !important;
-	height:322px !important;
-	left:289px !important;
-	top:466px !important;
-}
+#in5footer,  #prefooter {display:none;}
