@@ -41,10 +41,10 @@ if(multifile) {
 var isLiquid = (pageMode.indexOf('liquid') != -1), flip = (pageMode.indexOf('flip') != -1) && !multifile;
 var arrowNav = true;
 var lazyLoad = true;
-var scaleMode = 'best_all';
+var scaleMode = 'height_all';
 var webAppType = '';
 var useTracker = false;
-var shareInfo = {"btns":["twitter","facebook","linkedin"],"align":"right"};
+var shareInfo = {"btns":["twitter","facebook","linkedin"],"align":"left"};
 var maxScaleWidth, maxScaleHeight;
 var webAppEmailSubject = 'Check out this Web App for {deviceName}';
 var webAppEmailBody = 'Add this Web App to Your {deviceName} by visiting: ';
@@ -62,7 +62,7 @@ var sliderSettings = {}, nav = {}, in5 = {layouts:[
  		"index": 0
  	}
  ]},
-viewOpts = {"title":1,"page":1,"zoom":1,"fs":1,"pdf":"assets/downloads/05_RABBAA_SanTelmo.pdf","toc":null,"thumbs":1,"progress":1,"showbar":1,"bg":"#004e85","loadText":"cargando...","footer":0};
+viewOpts = {"title":1,"page":1,"zoom":0,"fs":1,"pdf":"assets/downloads/PENVLO35.pdf","toc":1,"thumbs":1,"progress":1,"showbar":1,"bg":"#000","loadText":"CARGANDO...","footer":0};
 var uAgent = navigator.userAgent.toLowerCase();
 var isIOS = ((/iPad|iPhone|iPod/.test(navigator.platform) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) && !window.MSStream), 
 	isIPad = uAgent.indexOf("ipad") > -1 || (isIOS && window.devicePixelRatio < 3), isIPhone = uAgent.indexOf("iphone") > -1 || (isIOS && window.devicePixelRatio > 2),
@@ -578,7 +578,7 @@ function getOrientation() {
 }
 
 function addNavProps(){
-	if(nav.numPages === undefined) nav.numPages=15;
+	if(nav.numPages === undefined) nav.numPages=133;
 	nav.rtl = $('#slider').attr('data-dir') == 'rtl';
 	if(nav.rtl) $('html').attr('data-dir', 'rtl');
 	nav.init = function() { setTimeout(function(){nav.to(getStartPage());},1); };
